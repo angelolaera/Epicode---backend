@@ -18,6 +18,8 @@ public class Esercizio5 {
         }else{
             System.out.println("Il numero è dispari");
         }
+
+
     }
 
     public static double perimetroRettangolo(double lato1, double lato2){
@@ -28,5 +30,8 @@ public class Esercizio5 {
         return num1 % 2;
     }
 
-    
+    public static double perimetroTriangolo(double l1, double l2, double l3) {
+        double p = (l1 + l2 + l3) / 2;
+        return Math.sqrt(p * (p - l1) * (p - l2) * (p - l3));
+    }
 }
